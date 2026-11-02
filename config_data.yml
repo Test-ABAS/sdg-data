@@ -39,6 +39,22 @@ src_dir: ''
 # folder. Further, each item can have any/all of the parameters that class uses.
 # The defaults below show what is used when this is omitted.
 inputs:
+  - class: InputSdmxMl_Structure
+    source: data/*.xml
+    dsd: /*.xml
+    import_series_attributes: true
+    import_observation_attributes: true
+    import_codes: true
+    indicator_id_map:
+     my_custom_code381: 3-8-1
+     my_custom_code411a: 4-1-1
+     my_custom_code411b: 4-1-1
+    drop_singleton_dimensions: false
+    drop_dimensions:
+      - FREQ
+      - REPORTING_TYPE
+      - NATURE
+      - TIME_PERIOD
   - class: InputCsvData
     # This describes the data files, relative to the "src_dir" indicated above.
     path_pattern: data/*-*.csv
