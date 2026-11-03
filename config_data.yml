@@ -40,7 +40,7 @@ src_dir: ''
 # The defaults below show what is used when this is omitted.
 inputs:
   - class: InputSdmxMl_Structure
-    source: data/*.xml
+    source: 'data/*.xml'
     dsd: 'GSS_DSD.xml'
     import_series_attributes: true
     import_observation_attributes: true
