@@ -41,7 +41,7 @@ src_dir: ''
 inputs:
   - class: InputSdmxMl_Structure
     source: data/*.xml
-    dsd: /GSS_DSD.xml
+    dsd: 'GSS_DSD.xml'
     import_series_attributes: true
     import_observation_attributes: true
     import_codes: true
